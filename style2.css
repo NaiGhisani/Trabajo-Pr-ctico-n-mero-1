@@ -1,0 +1,134 @@
+@media only screen and (max-width:1500px){
+    body{
+        background-color: beige;
+        border: 1px solid;
+        border-color: #e9967a;
+    }
+    .column{
+        width:60%;
+    }
+    .row{
+        width:50%;
+    }
+}
+.grid{
+    padding-bottom: 2%;
+    width: 100%;
+    display: flexbox;
+    flex-direction: column;
+}
+.navbar-inverse{
+    background-color:rgba(255, 208, 234, 0.87);
+    width: "100";
+    height: "5";
+    color: #708090;
+    font-family: cursive;
+    text-align: left;
+    padding-left: 2%;
+    border: 1px groove; 
+    border-color: #e9967a;
+}
+.navbar-collapse{
+    color: #708090;
+    font-family: cursive;
+    text-align: center;
+}
+a{
+    margin: 0.3%;
+}
+#titulo{
+    font-family:cursive;
+    color: black;
+    text-align: center;
+}
+.subtitulo{
+    font-family:cursive;
+    color: black;
+    text-align: center;
+    position: relative;
+    justify-content:flex-start;
+    margin-top: 2%;
+    animation: cambiardecolor 2s linear 0s 3 normal forwards;
+    animation-iteration-count: infinite;
+}
+@keyframes cambiardecolor {
+    from{color: black;}
+    to{color: darkolivegreen;}
+}
+
+.imagen1{
+    justify-content: left;
+    margin-left: 2%;
+    margin-top: -10%;
+    justify-content:left;
+    display: inline-block;
+}
+.Receta{
+    justify-content: left;
+    margin-top: 5%;
+    margin-left: 4%;
+    margin-right: 2%;
+    position: relative;
+    display: inline-block;
+}
+#tituloreceta{
+    font-family:cursive;
+    color:slategrey;
+    text-align: center;
+    display: inline-block;
+    margin-left: 5%;
+}
+
+#Ingredientes{
+    justify-content: left;
+    font-family:cursive;
+    text-align: left;
+    color: darkslategray;
+    margin-left: 4%;
+} 
+#lista{
+    color:slategrey;
+    display: inline-block;
+}
+
+.Receta2{
+    grid-area: "Receta2";
+    justify-content: end;
+    color: darkslategray;
+    text-align: left;
+    margin-top: 5%;
+    margin-left: 5%;
+}
+#tituloprocedimientos{
+    font-family:cursive;
+    animation: backInUp;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    justify-content: left;
+}
+@keyframes backInUp {
+    from{font-size: 100%;}
+    to{font-size: 110%;} 
+}
+#piedepagina{
+    font-family:cursive; 
+}
+a{
+    animation: cambiocolor;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+@keyframes cambiocolor {
+    from{color: black;}
+    to{color:indianred;}
+}
+
+footer{
+    grid-area: "footer";
+    background-color:rgba(255, 208, 234, 0.87);
+    text-align: center;
+    width: "100";
+    height: "200";
+    padding-bottom: 5%;
+    justify-content: end;
+}

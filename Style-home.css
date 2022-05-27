@@ -1,0 +1,95 @@
+
+@media only screen and (min-width:260px){
+    
+    .column{
+        width:"60";
+    }
+    .row{
+        width:"50";
+    }
+}
+body{
+    background-color: beige;
+    border: 1px solid;
+    border-color: #e9967a;
+    border-top-right-radius: 2% 2% 1%;
+    font-size: 1.5rem;
+}
+.container{
+    display: grid;
+}
+header{
+    width: "100";
+    padding-bottom: 2%;   
+    color:black;
+    font-family: cursive;
+    text-align: center;
+}
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+  width: 40%;
+  height: 30%;
+  margin: auto;
+}
+
+.navbar-inverse{
+    background-color:rgba(255, 208, 234, 0.87);
+    width: "100";
+    height: "5";
+    color: #708090;
+    font-family: cursive;
+    text-align: left;
+    padding-left: 2%;
+    border: 1px groove; 
+    border-color: #e9967a;
+}
+.navbar-collapse{
+    color: #708090;
+    font-family: cursive;
+    text-align: center;
+}
+#subtitulo{
+    color:black;
+    font-family: cursive;
+    text-align: center;
+    padding-left: 30%;
+    margin-bottom: 5%;
+}
+.col-sm-6-right{
+    color:black;
+    text-align: left;
+    padding-left: 3%;
+    font-family: cursive;
+    margin-top: 2%;
+}
+.row-sm-4{
+    padding-left: 3%;
+    align-content: center;
+}
+.col-sm-8{
+    color:black;
+    text-align: left;
+    padding-left: 3%;
+    font-family: cursive;
+}
+a{
+    animation: cambiocolor;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+@keyframes cambiocolor {
+    from{color: black;}
+    to{color:indianred;}
+}
+footer{
+    grid-area: "footer";
+    background-color:rgba(255, 208, 234, 0.87);
+    text-align: center;
+    width: "100";
+    height: "200";
+    margin-top: 2%;
+    padding-bottom: 5%;
+    justify-content: end;
+}
+
+
